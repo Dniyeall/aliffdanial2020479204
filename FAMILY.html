@@ -1,0 +1,162 @@
+<html>
+<head>
+<link href="assets/css/homecss.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #14213D;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FCA311;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #FCA311;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+
+							<body background="homebckgrd.jpg">
+
+  
+<div class="topnav">
+  	<a class="active" href="HOME.html">Home</a>
+	<a href="BIODATA.html">Biodata</a>
+	<a href="EXPERIENCE.html">Experience</a>
+	<a href="EDUCATION.html">Education</a>
+  	<a href="FAMILY.html">Family</a>
+  	<a href="MYGALLERY.html">My Gallery</a>
+	<a href="SKILLS.html">Skills</a>
+</div>
+
+
+	
+	<center>
+	<h1 style="font-family:adelia; color:white; font-size:80px; text-shadow: 6px 6px 40px white">&#9733; MY FAMILY &#9733;</h1>
+	
+	<div class="square">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="assets/image/family.jpg" style="width:60%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets/image/family2.jpg" style="width:60%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="assets/image/family3.jpg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="assets/image/family4.jpg" style="width:60%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="assets/image/family5.jpg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="assets/image/family6.jpg" style="width:40%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family.jpg" style="width:100%" onclick="currentSlide(1)" alt="HARI RAYA AIDILFITRI">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family2.jpg" style="width:100%" onclick="currentSlide(2)" alt="FAMILY HOLIDAY">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family3.jpg" style="width:60%" onclick="currentSlide(3)" alt="SIBLINGS GATHERING">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family4.jpg" style="width:100%" onclick="currentSlide(4)" alt="PERAK SIBLINGS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family5.jpg" style="width:60%" onclick="currentSlide(5)" alt="WITH MY LOVELY MOM">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="assets/image/family6.jpg" style="width:100%" onclick="currentSlide(6)" alt="FAMILY MEET MEALS">
+    </div>
+  </div>
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br><br><br><br><br><br><br><br><br><br><br>
+</center>
+<i><b><blockquote style="font-family:times new roman; color:white; font-size:40px; letter-spacing: 8px; text-shadow: 6px 6px 30px aqua">"NO MATTER WHAT PROBLEMS BEFALL US, WE REMAIN STRONG AS A HAPPY FAMILY. UNITED WE ARE STRONG, DIVIDED WE FALL"
+</blockquote></b></i>
+
+<center>
+<br><br><br><br>
+<audio controls>
+  <source src="assets/videosong/spacesong.mp3" type="audio/mpeg">
+</audio>
+
+</html>
